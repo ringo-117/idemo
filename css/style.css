@@ -221,6 +221,8 @@ body {
   /* height: 17%; */
   /* background-color: #fab5b5; */
   align-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .step .btn {
@@ -231,13 +233,13 @@ body {
   /* margin-top: 20px; */
   display: block;
   width: 260px;
-  text-align: center;
+  /* text-align: center; */
   align-content: center;
   height: 58px;
   border-radius: 50px;
   background-color: #fff;
-  margin-top: 32px;
-  margin-bottom: 72px;
+  /* margin-top: 32px; */
+  /* margin-bottom: 72px; */
 }
 
 
@@ -248,7 +250,7 @@ body {
 }
 
 .swiper-slide {
-  /* background-color: #7eeaf8; */
+  background-color: #7eeaf8;
   text-align: center;
   width: 400px;
   align-content: center;
@@ -273,27 +275,36 @@ body {
   height: 75%;
   margin: 0 auto;
 }
-.swiper-slide .slide-01 .phone {
+/* .swiper-slide .slide-01 .phone {
   object-position: 50% 0%;
-}
+} */
 
 .swiper-slide .slide-02 {
   height: 75%;
   margin: 0 auto;
 }
-.swiper-slide .slide-02 .phone {
+.swiper-slide .phone {
   object-position: 50% 0%;
 }
 
 .swiper-slide .slide-03 {
   width: 200px;
+  height: 75%;
+  max-height: 403px;
+
   margin: 0 auto;
 }
+/* .swiper-slide .slide-03 .phone {
+  object-position: 50% 0%;
+} */
 
 .swiper-slide .slide-04 {
   width: 150px;
+  height: 75%;
+  max-height: 303px;
+
   margin: 0 auto;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 .swiper-slide .phone {
