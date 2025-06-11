@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="サイトの概要文が入ります。">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>IDEMO</title>
+
+    <meta http-equiv="Cache-Control" content="no-store">
+
+    <link rel="shortcut icon" href="./img/favicon.ico">
+
+    <link rel="stylesheet" href="css/destyle.css">
+    <!-- <link rel="stylesheet" href="swiper/swiper.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <header class="header">
+      <a class="logo-box" href="index.html">
+        <img class="logo-img" src="img/logo.png" alt="and-1ロゴ">
+        <h1>IDEMO</h1>
+      </a>
+      <a href="#" class="btn" >今すぐはじめる</a>
+    </header>
+
+    <main>
+
+      <div class="fullPageScroll">
+        <section id="section-01" class="top section section-01">
+          <!-- <article class="top-img-box"> -->
+            <figure class="top-img-01">
+              <p class="top-title title-01">いつでも</p>
+              <img src="img/test_img.webp" alt="#">
+            </figure>
+            <figure class="top-img-02">
+              <p class="top-title title-02">どこでも</p>
+              <img src="img/test_img.webp" alt="#">
+            </figure>
+            <figure class="top-img-03">
+              <p class="top-title title-03">だれでも</p>
+              <img src="img/test_img.webp" alt="#">
+            </figure>
+          <!-- </article> -->
+        </section>
+
+        <section id="section-02" class="about section section-02">
+
+          <p>ABOUT</p>
+
+        </section>
+
+        <section id="section-03" class="step section section-03">
+          <p class="step-title">簡単<span>３</span>ステップ</p>
+          <!-- 横スライド -->
+          <!-- <article>
+            <figure><img src="#" alt="スライド01"></figure>
+            <figure><img src="#" alt="スライド02"></figure>
+            <figure><img src="#" alt="スライド03"></figure>
+            <figure><img src="#" alt="スライド04"></figure>
+          </article> -->
+
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <figure class="slide-01">
+                  <img class="phone" src="img/phone.webp" alt="スライド01">
+                </figure>
+                <p class="slide-text">①友達登録</p>
+
+              </div>
+              <div class="swiper-slide">
+                <figure class="slide-02">
+                  <img class="phone" src="img/phone.webp" alt="スライド02">
+                </figure>
+                <p class="slide-text">②質問に答える</p>
+              </div>
+              <div class="swiper-slide">
+                <figure class="slide-03">
+                  <img class="phone" src="img/phone.webp" alt="スライド03">
+                </figure>
+                <p class="slide-text">③PDF書類完成</p>
+              </div>
+              <div class="swiper-slide">
+                <figure class="slide-04">
+                  <img class="phone" src="img/phone.webp" alt="スライド04">
+                </figure>
+                <!-- <p class="slide-text">④すぐに使える！</p> -->
+                <div class="btn-box">
+                  <a href="#" class="btn">今すぐはじめる</a>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+
+          
+        </section>
+
+        <footer id="section-04" class="footer section section-04">
+          <a>SNSリンクなど</a>
+          <P class="copy">Copyright &copy; IDEMO All rights reserved.</P>
+        </footer>
+      </div>
+    </main>
+
+    
+
+    <!-- <script src="swiper/swiper-bundle.min.js"></script> -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

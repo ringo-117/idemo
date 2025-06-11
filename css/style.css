@@ -1,0 +1,329 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+  font-feature-settings: 'palt' 1;
+  letter-spacing: 0.05em;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+/* ==================== スクロール ================== */
+.fullPageScroll {
+  width: 100%;
+  height: 100svh;
+  scroll-snap-type: y mandatory;
+  /* overflow-y: auto; */
+  overflow-y: scroll;
+  scroll-padding-top: 56px;
+}
+
+.section {
+  /* width: 100%;
+  height: 100vh;
+  top */
+  scroll-snap-align: start;
+  /* min-height: 100vh; */
+}
+
+/*==============================================================
+  　　ヘッダー
+==============================================================*/
+.header {
+  position: fixed;
+  width: 100%;
+  height: 56px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px 0;
+  top: 0;
+  z-index: 20;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+}
+
+.logo-box h1 {
+  font-weight: bold;
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+.logo-img {
+  height: 30px;
+}
+
+.btn {
+  font-size: 13px;
+  font-weight: bold;
+  border: solid 1px #333333;
+  padding: 10px 14px;
+  border-radius: 25px;
+}
+
+
+/*==============================================================
+  　　ヒーロー
+==============================================================*/
+.top {
+  position: relative;
+  width: 100vw;
+  /* height: calc(100svh - 56px + 10%); */
+  height: calc(100svh - 56px);
+  /* height: calc(100svh); */
+
+  /* display: flex; */
+  /* flex-direction: column; */
+  margin-top: 56px;
+  /* padding-top: 56px; */
+
+  /* margin-bottom: -23%; */
+
+  /* display: grid;
+  grid-template-rows: 1fr 1fr 1fr; */
+  overflow: hidden;
+}
+.top figure {
+  position: absolute;
+  /* flex: 1; */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* height: 100%; */
+  overflow: hidden;
+  /* bottom: 0; */
+}
+
+
+
+.top-img-01 {
+  height: 35%;
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); */
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  z-index: 1;
+  padding-top: 56px;
+}
+.top-img-02 {
+  height: 40%;
+  /* position: relative; */
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  /* clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%); */
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+  z-index: 2;
+}
+.top-img-03 {
+  height: 35%;
+  /* position: relative; */
+  bottom: 0;
+  /* clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%); */
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  z-index: 1;
+}
+
+/* TOPタイトル */
+.top-title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  font-weight: bold;
+  /* 縦書き */
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-feature-settings: initial;
+}
+.top-title.title-01,
+.top-title.title-03 {
+  left: 20px;
+}
+.top-title.title-02 {
+  right: 20px;
+}
+
+/* .top-img-01 img {
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+}
+
+.top-img-02 img {
+  clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+}
+
+.top-img-03 img {
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+} */
+
+.top figure img {
+  width: 100%;
+  height: 100%;
+  /* height: calc(35svh);; */
+  object-fit: cover;
+  /* display: block; */
+  /* padding-top: -10%; */
+}
+
+/*==============================================================
+  　　ABOUT
+==============================================================*/
+.about {
+  height: calc(100svh - 56px);
+  align-content: center;
+  background-color: #c1c1c1;
+}
+
+.about p {
+  font-size: 20px;
+  text-align: center;
+  align-content: center;
+}
+
+/*==============================================================
+  　　ステップ
+==============================================================*/
+.step {
+  height: calc(100svh - 56px);
+  justify-items: center;
+  /* padding-top: 50px; */
+
+  /* display: grid;
+  grid-template-rows: auto 1fr auto; */
+  position: relative;
+  background-color: #4E6CFC;
+}
+
+.step-title {
+  font-size: 36px;
+  font-weight: bold;
+  /* margin-bottom: 20px; */
+  height: 17%;
+  /* background-color: #fab5b5; */
+  align-content: center;
+  color: #fff;
+  letter-spacing: 0.1em;
+  padding-top: 8px;
+}
+.step-title span {
+  font-size: 60px;
+  margin: 0 8px;
+}
+
+.btn-box {
+  /* height: 17%; */
+  /* background-color: #fab5b5; */
+  align-content: center;
+}
+
+.step .btn {
+  font-size: 18px;
+  /* padding: 15px 24px; */
+  margin: 0 auto;
+  justify-content: center;
+  /* margin-top: 20px; */
+  display: block;
+  width: 260px;
+  text-align: center;
+  align-content: center;
+  height: 58px;
+  border-radius: 50px;
+  background-color: #fff;
+  margin-top: 32px;
+  margin-bottom: 72px;
+}
+
+
+/* ==================== スライダー ================== */
+.swiper {
+  height: 420px;
+  height: 80%;
+}
+
+.swiper-slide {
+  /* background-color: #7eeaf8; */
+  text-align: center;
+  width: 400px;
+  align-content: center;
+  margin-bottom: 20px;
+}
+
+.element.style {
+  width: 400px;
+}
+
+.swiper-slide .slide-text {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+  letter-spacing: 0.1em;
+}
+
+.swiper-slide .slide-01 {
+  /* width: 280px; */
+  height: 75%;
+  margin: 0 auto;
+}
+.swiper-slide .slide-01 .phone {
+  object-position: 50% 0%;
+}
+
+.swiper-slide .slide-02 {
+  height: 75%;
+  margin: 0 auto;
+}
+.swiper-slide .slide-02 .phone {
+  object-position: 50% 0%;
+}
+
+.swiper-slide .slide-03 {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.swiper-slide .slide-04 {
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.swiper-slide .phone {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+/* .swiper-pagination {
+  margin-bottom: -15px;
+} */
+
+
+/*==============================================================
+  　　フッター
+==============================================================*/
+.footer {
+  height: 100px;
+  text-align: center;
+  /* background-color: #f3b8b8; */
+  /* align-content: center; */
+  padding-top: 35px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer .copy {
+  margin-top: 15px;
+  font-size: 11px;
+}
