@@ -201,18 +201,19 @@ body {
 }
 
 .step-title {
-  font-size: 36px;
+  font-size: 34px;
   font-weight: bold;
   /* margin-bottom: 20px; */
   height: 17%;
   /* background-color: #fab5b5; */
-  align-content: center;
+  /* align-content: center; */
   color: #fff;
   letter-spacing: 0.1em;
   padding-top: 8px;
+  text-align: center;
 }
 .step-title span {
-  font-size: 60px;
+  font-size: 56px;
   margin: 0 8px;
 }
 
