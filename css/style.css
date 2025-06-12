@@ -131,7 +131,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 38px;
+  font-size: 36px;
   font-weight: bold;
   color: #fff;
   /* 縦書き */
@@ -142,7 +142,8 @@ body {
   z-index: 4;
   /* text-shadow: 1px 1px 2px #000000; */
   text-shadow: #323232 1px 0 10px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05em;
+  font-family: 'Noto Sans JP';
 }
 .top-title.title-01 {
   top: 44%;
@@ -151,11 +152,12 @@ body {
 .top-title.title-02 {
   top: 48%;
   left: 25px;
+  letter-spacing: 0.08em;
   /* text-shadow: #fff 1px 0 10px; */
 }
 .top-title.title-03 {
   top: 60%;
-  right: 12px;
+  right: 8px;
 }
 
 /* .top-img-01 img {
