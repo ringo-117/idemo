@@ -94,6 +94,11 @@ body {
   /* height: 100%; */
   overflow: hidden;
   /* bottom: 0; */
+  /* filter: brightness(90%); */
+}
+
+.top figure img {
+  
   filter: brightness(90%);
 }
 
