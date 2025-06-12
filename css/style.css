@@ -100,8 +100,6 @@ body {
   /* bottom: 0; */
 }
 
-
-
 .top-img-01 {
   height: 35%;
   /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); */
@@ -129,6 +127,15 @@ body {
   z-index: 1;
 }
 
+.top-img-01 img {
+  transform: scale(1.1);
+  object-position: 10% 0%;
+}
+.top-img-03 img {
+  transform: scale(1.1);
+  object-position: 0% 50%;
+}
+
 /* TOPタイトル */
 .top-title {
   position: absolute;
@@ -141,13 +148,19 @@ body {
   writing-mode: vertical-rl;
   text-orientation: upright;
   font-feature-settings: initial;
+  z-index: 4;
+  /* text-shadow: 1px 1px 2px #ffffff; */
 }
 .top-title.title-01,
 .top-title.title-03 {
-  left: 20px;
+  left: 16px;
 }
 .top-title.title-02 {
-  right: 20px;
+  right: 16px;
+  text-shadow: #fff 1px 0 10px;
+}
+.top-title.title-03 {
+  top: 51%;
 }
 
 /* .top-img-01 img {
