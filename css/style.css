@@ -102,12 +102,12 @@ body {
 .top-01-title {
   font-family: 'Noto Sans';
   text-align: center;
-  margin-top: 35px;
+  margin-top: 24px;
   font-size: 18px;
   font-weight: 500;
   color: #344156;
   margin-bottom: 40px;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.1em;
   z-index: 4;
   position: relative;
 
@@ -135,7 +135,7 @@ body {
 .bg-text {
   font-family: 'Noto Sans';
   position: absolute;
-  top: 16px;
+  top: 8px;
   left: 0px;
   writing-mode: vertical-rl;
   font-size: 150px;
@@ -146,7 +146,7 @@ body {
 
 .top-box-02 {
   position: absolute;
-  bottom: 16px;
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
 }
