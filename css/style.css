@@ -3,10 +3,12 @@
 
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif; */
+  font-family: 'Noto Sans';
   font-feature-settings: 'palt' 1;
   letter-spacing: 0.05em;
-  color: #333333;
+  /* color: #333333; */
+  color: #344156;
   background-color: #ffffff;
 }
 
@@ -15,7 +17,11 @@ body {
   width: 100%;
   height: 100svh;
   scroll-snap-type: y mandatory;
+
+
   /* overflow-y: auto; */
+
+
   overflow-y: scroll;
   scroll-padding-top: 56px;
 }
@@ -66,7 +72,7 @@ body {
   border-radius: 8px;
 }
 
-.btn {
+.header .btn {
   font-size: 13px;
   font-weight: bold;
   border: solid 1px #333333;
@@ -78,14 +84,123 @@ body {
 /*==============================================================
   　　ヒーロー
 ==============================================================*/
+/* ==================== ヒーロー01 ================== */
 .top {
   position: relative;
   width: 100vw;
   height: calc(100svh - 56px);
   margin-top: 56px;
   overflow: hidden;
+
+  /* background-color: #da7b7b; */
 }
-.top figure {
+
+.section-01 {
+  position: relative;
+}
+
+.top-01-title {
+  font-family: 'Noto Sans';
+  text-align: center;
+  margin-top: 35px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #344156;
+  margin-bottom: 40px;
+  letter-spacing: 0.13em;
+  z-index: 4;
+  position: relative;
+
+}
+
+.top-01-title .row-01 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: -5px;
+}
+.top-01-title .row-02 {
+  font-size: 20px;
+  font-family: 'Fredoka';
+}
+.top-01-title .row-02 span {
+  font-size: 60px;
+  font-weight: 600;
+  color: #06c755;
+}
+.top-01-title .row-03 {
+  font-size: 28px;
+}
+
+
+.bg-text {
+  font-family: 'Noto Sans';
+  position: absolute;
+  top: 16px;
+  left: 0px;
+  writing-mode: vertical-rl;
+  font-size: 150px;
+  font-weight: bold;
+  color: #f0f0f0;
+  z-index: -1;
+}
+
+.top-box-02 {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.top-img {
+  margin: 0 auto;
+  /* margin-left: 85px; */
+  width: 320px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.top-img img {
+  width: 250px;
+  margin-left: 60px;
+  margin-bottom: -10px;
+}
+
+/* .section-01 .btn {
+  background-color: #4E6CFC;
+  color: #ffffff;
+  font-size: 20px;
+  width: 350px;
+  border-radius: 25px;
+  margin: 0 auto;
+} */
+
+.section-01 .btn-box {
+  align-content: center;
+  margin-bottom: 20px;
+  z-index: 3;
+  position: relative;
+}
+
+.section-01 .btn {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 auto;
+  justify-content: center;
+  display: block;
+  width: 315px;
+  align-content: center;
+  height: 52px;
+  border-radius: 50px;
+  background-color: #4E6CFC;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+/* ==================== ヒーロー02 ================== */
+.section-02 {
+  margin-top: 0;
+}
+.section-02 figure {
   position: absolute;
   /* flex: 1; */
   margin: 0;
@@ -97,8 +212,7 @@ body {
   /* filter: brightness(90%); */
 }
 
-.top figure img {
-  
+.section-02 figure img {
   filter: brightness(90%);
 }
 
@@ -184,7 +298,7 @@ body {
   clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
 } */
 
-.top figure img {
+.section-02 figure img {
   width: 100%;
   height: 100%;
   /* height: calc(35svh);; */
@@ -239,7 +353,7 @@ body {
   margin: 0 8px;
 }
 
-.btn-box {
+.step .btn-box {
   /* height: 17%; */
   /* background-color: #fab5b5; */
   align-content: center;
