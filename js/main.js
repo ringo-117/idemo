@@ -1,5 +1,5 @@
 // JavaScript Document
-const mySwiper = new Swiper('.swiper', {
+const mySwiper = new Swiper('.step-slide', {
   // Optional parameters
   // loop: true,
   slidesPerView: 1.3,
@@ -26,6 +26,27 @@ const mySwiper = new Swiper('.swiper', {
   //   el: '.swiper-scrollbar',
   // },
 });
+
+const topSwiper = new Swiper('.section-01', {
+  // スライドは1枚ずつ表示
+    slidesPerView: 1,
+
+    // 自動再生の設定
+    autoplay: {
+      delay: 3000, // 3秒ごとに切り替え
+      disableOnInteraction: false // ユーザー操作後も止まらない
+    },
+
+    // ループさせる（無限ループ）
+    loop: true,
+
+    // スライドの切り替えアニメーション（デフォルトは slide）
+    effect: 'slide',
+
+    // アニメーション速度（ミリ秒）
+    speed: 800,
+});
+
 
 
 

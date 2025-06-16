@@ -24,12 +24,11 @@
     <link rel="shortcut icon" href="./img/favicon.ico">
 
     <link rel="stylesheet" href="css/destyle.css">
-    <!-- <link rel="stylesheet" href="swiper/swiper.min.css"> -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="css/style.css?v=2.5">
+    <link rel="stylesheet" href="css/style.css?v=2.6">
   </head>
 
   <body>
@@ -46,7 +45,45 @@
     <main>
 
       <div class="fullPageScroll">
-        <section id="section-01" class="top section section-01">
+        <!-- Swiper -->
+        <div id="section-01" class="swiper topSwiper top section section-01">
+          <div class="swiper-wrapper">
+            <!-- スライド-01 -->
+            <div class="swiper-slide">
+              <article class="top-01-title">
+                <p class="row-01">いつでも、 どこでも、 だれでも</p>
+                <p class="row-02"><span>LINE</span>で書類作成が</p>
+                <p class="row-03">もっとカンタンに！</p>
+              </article>
+              <p class="bg-text">idemo</p>
+
+              <article class="top-box-02">
+                <figure class="top-img">
+                  <img src="img/hero-top.webp" alt="ヒーローイメージ">
+                </figure>
+                <div class="btn-box">
+                  <a href="#" class="btn">使い方</a>
+                </div>
+              </article>
+            </div>
+            <!-- スライド-02 -->
+            <div class="swiper-slide top-02">
+              <figure class="top-img-01">
+                <p class="top-title title-01">いつでも</p>
+                <img src="img/hero-01.webp" alt="ヒーローイメージ01">
+              </figure>
+              <figure class="top-img-02">
+                <p class="top-title title-02">どこでも</p>
+                <img src="img/hero-02.webp" alt="ヒーローイメージ02">
+              </figure>
+              <figure class="top-img-03">
+                <p class="top-title title-03">だれでも</p>
+                <img src="img/hero-03.webp" alt="ヒーローイメージ03">
+              </figure>
+            </div>
+          </div>
+        </div>
+        <!-- <section id="section-01" class="top section section-01">
           <article class="top-01-title">
             <p class="row-01">いつでも、 どこでも、 だれでも</p>
             <p class="row-02"><span>LINE</span>で書類作成が</p>
@@ -62,43 +99,37 @@
               <a href="#" class="btn">使い方</a>
             </div>
           </article>
-        </section>
+        </section> -->
 
-        <section id="section-02" class="top section section-02">
-          <!-- <article class="top-img-box"> -->
-            <figure class="top-img-01">
-              <p class="top-title title-01">いつでも</p>
-              <img src="img/hero-01.webp" alt="ヒーローイメージ01">
-            </figure>
-            <figure class="top-img-02">
-              <p class="top-title title-02">どこでも</p>
-              <img src="img/hero-02.webp" alt="ヒーローイメージ02">
-            </figure>
-            <figure class="top-img-03">
-              <p class="top-title title-03">だれでも</p>
-              <img src="img/hero-03.webp" alt="ヒーローイメージ03">
-            </figure>
-          <!-- </article> -->
-        </section>
+      <!-- <section id="section-02" class="top section section-02">
+        <figure class="top-img-01">
+          <p class="top-title title-01">いつでも</p>
+          <img src="img/hero-01.webp" alt="ヒーローイメージ01">
+        </figure>
+        <figure class="top-img-02">
+          <p class="top-title title-02">どこでも</p>
+          <img src="img/hero-02.webp" alt="ヒーローイメージ02">
+        </figure>
+        <figure class="top-img-03">
+          <p class="top-title title-03">だれでも</p>
+          <img src="img/hero-03.webp" alt="ヒーローイメージ03">
+        </figure>
+      </section> -->
 
         <section id="section-03" class="about section section-04">
 
           <p>ABOUT</p>
+          <figure class="about-img">
+            <img src="img/about-phone.webp" alt="スマホ">
+          </figure>
 
         </section>
 
         <section id="section-04" class="step section section-04">
           <p class="step-title">簡単<span>３</span>ステップ</p>
           <!-- 横スライド -->
-          <!-- <article>
-            <figure><img src="#" alt="スライド01"></figure>
-            <figure><img src="#" alt="スライド02"></figure>
-            <figure><img src="#" alt="スライド03"></figure>
-            <figure><img src="#" alt="スライド04"></figure>
-          </article> -->
-
           <!-- Slider main container -->
-          <div class="swiper">
+          <div class="swiper step-slide">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -143,8 +174,6 @@
             <!-- If we need scrollbar -->
             <!-- <div class="swiper-scrollbar"></div> -->
           </div>
-
-          
         </section>
 
         <footer id="section-05" class="footer section section-05">
@@ -154,9 +183,7 @@
       </div>
     </main>
 
-    
 
-    <!-- <script src="swiper/swiper-bundle.min.js"></script> -->
      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

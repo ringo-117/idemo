@@ -91,8 +91,6 @@ body {
   height: calc(100svh - 56px);
   margin-top: 56px;
   overflow: hidden;
-
-  /* background-color: #da7b7b; */
 }
 
 .section-01 {
@@ -110,7 +108,6 @@ body {
   letter-spacing: 0.1em;
   z-index: 4;
   position: relative;
-
 }
 
 .top-01-title .row-01 {
@@ -119,7 +116,7 @@ body {
   margin-bottom: -5px;
 }
 .top-01-title .row-02 {
-  font-size: 20px;
+  font-size: 22px;
   font-family: 'Fredoka';
 }
 .top-01-title .row-02 span {
@@ -129,8 +126,8 @@ body {
 }
 .top-01-title .row-03 {
   font-size: 28px;
+  letter-spacing: 0.12em;
 }
-
 
 .bg-text {
   font-family: 'Noto Sans';
@@ -153,7 +150,6 @@ body {
 
 .top-img {
   margin: 0 auto;
-  /* margin-left: 85px; */
   width: 320px;
   margin: 0 auto;
   z-index: 2;
@@ -164,15 +160,6 @@ body {
   margin-left: 60px;
   margin-bottom: -10px;
 }
-
-/* .section-01 .btn {
-  background-color: #4E6CFC;
-  color: #ffffff;
-  font-size: 20px;
-  width: 350px;
-  border-radius: 25px;
-  margin: 0 auto;
-} */
 
 .section-01 .btn-box {
   align-content: center;
@@ -197,10 +184,10 @@ body {
   letter-spacing: 0.2em;
 }
 /* ==================== ヒーロー02 ================== */
-.section-02 {
+.top-02 {
   margin-top: 0;
 }
-.section-02 figure {
+.top-02 figure {
   position: absolute;
   /* flex: 1; */
   margin: 0;
@@ -212,7 +199,7 @@ body {
   /* filter: brightness(90%); */
 }
 
-.section-02 figure img {
+.top-02 figure img {
   filter: brightness(90%);
 }
 
@@ -260,13 +247,7 @@ body {
   font-size: 36px;
   font-weight: bold;
   color: #fff;
-  /* 縦書き */
-  /* -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  font-feature-settings: initial; */
   z-index: 4;
-  /* text-shadow: 1px 1px 2px #000000; */
   text-shadow: #323232 1px 0 10px;
   letter-spacing: 0.05em;
   font-family: 'Noto Sans JP';
@@ -279,32 +260,16 @@ body {
   top: 48%;
   left: 25px;
   letter-spacing: 0.08em;
-  /* text-shadow: #fff 1px 0 10px; */
 }
 .top-title.title-03 {
   top: 60%;
   right: 8px;
 }
 
-/* .top-img-01 img {
-  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
-}
-
-.top-img-02 img {
-  clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
-}
-
-.top-img-03 img {
-  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
-} */
-
-.section-02 figure img {
+.top-02 figure img {
   width: 100%;
   height: 100%;
-  /* height: calc(35svh);; */
   object-fit: cover;
-  /* display: block; */
-  /* padding-top: -10%; */
 }
 
 /*==============================================================
@@ -320,6 +285,15 @@ body {
   font-size: 20px;
   text-align: center;
   align-content: center;
+}
+
+.about-img {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.about-img img {
+  width: 100%;
 }
 
 /*==============================================================
@@ -380,12 +354,12 @@ body {
 
 
 /* ==================== スライダー ================== */
-.swiper {
+.step-slide.swiper {
   height: 420px;
   height: 80%;
 }
 
-.swiper-slide {
+.step-slide .swiper-slide {
   /* background-color: #7eeaf8; */
   text-align: center;
   width: 400px;
@@ -397,7 +371,7 @@ body {
   width: 400px;
 }
 
-.swiper-slide .slide-text {
+.step-slide .swiper-slide .slide-text {
   font-size: 22px;
   font-weight: bold;
   margin-top: 20px;
@@ -406,22 +380,22 @@ body {
   letter-spacing: 0.1em;
 }
 
-.swiper-slide .slide-01 {
+.step-slide .swiper-slide .slide-01 {
   /* width: 280px; */
   height: 75%;
   margin: 0 auto;
 }
 
 
-.swiper-slide .slide-02 {
+.step-slide .swiper-slide .slide-02 {
   height: 75%;
   margin: 0 auto;
 }
-.swiper-slide .phone {
+.step-slide .swiper-slide .phone {
   object-position: 50% 0%;
 }
 
-.swiper-slide .slide-03 {
+.step-slide .swiper-slide .slide-03 {
   /* width: 200px; */
   height: 75%;
   /* max-height: 403px; */
@@ -432,7 +406,7 @@ body {
   object-position: 50% 0%;
 } */
 
-.swiper-slide .slide-04 {
+.step-slide .swiper-slide .slide-04 {
   width: 150px;
   height: 75%;
   max-height: 303px;
@@ -441,13 +415,13 @@ body {
   /* margin-top: 40px; */
 }
 
-.swiper-slide .phone {
+.step-slide .swiper-slide .phone {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.swiper-pagination-bullet-active {
+.step-slide .swiper-pagination-bullet-active {
   background-color: #fff;
 }
 
@@ -456,7 +430,7 @@ body {
 } */
 
 
-.swiper-slide .slide-01 img.content {
+.step-slide .swiper-slide .slide-01 img.content {
   position: absolute;
   top: 50%;
   left: 50%;
