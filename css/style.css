@@ -50,27 +50,27 @@ body {
   z-index: 20;
 }
 
-.logo-box {
+/* .logo-box {
   display: flex;
   align-items: center;
-}
+} */
 
-.logo-box h1 {
+/* .logo-box h1 {
   font-weight: bold;
   margin-left: 8px;
   font-size: 20px;
-}
-
-/* .logo-img {
-  height: 30px;
 } */
 
 .logo-img {
+  height: 30px;
+}
+
+/* .logo-img {
   width: 30px;
   height: 30px;
   background-color: #4E6CFC;
   border-radius: 8px;
-}
+} */
 
 .header .btn {
   font-size: 13px;
