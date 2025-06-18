@@ -51,12 +51,32 @@ const topSwiper = new Swiper('.section-01', {
 
 
 // スムーススクロール
-const paginations = document.querySelectorAll(".pagination a");
-paginations.forEach(pagination => {
-  pagination.addEventListener("click", e => {
-    e.preventDefault();
-    const targetId = e.target.hash;
+// const paginations = document.querySelectorAll(".pagination a");
+// paginations.forEach(pagination => {
+//   pagination.addEventListener("click", e => {
+//     e.preventDefault();
+//     const targetId = e.target.hash;
+//     const target = document.querySelector(targetId);
+//     target.scrollIntoView({ behavior: "smooth" });
+//   });
+// });
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click", e => {
+    const targetId = link.getAttribute("href");
     const target = document.querySelector(targetId);
-    target.scrollIntoView({ behavior: "smooth" });
+    const container = document.querySelector('.fullPageScroll');
+
+    if (target && container) {
+      e.preventDefault();
+
+      const offset = 60;
+      const top = target.offsetTop - offset;
+
+      container.scrollTo({
+        top: top,
+        behavior: "smooth"
+      });
+    }
   });
 });
