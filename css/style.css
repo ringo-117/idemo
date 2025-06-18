@@ -555,12 +555,44 @@ body {
   text-align: center;
   /* background-color: #f3b8b8; */
   /* align-content: center; */
-  padding-top: 35px;
+  padding-top: 28px;
   font-size: 14px;
   font-weight: 500;
 }
 
+.sns-box {
+  display: flex;
+  justify-content: center;
+}
+
+.sns-box .sns {
+  width: 24px;
+  height: 24px;
+  align-content: center;
+  margin: 0 14px;
+}
+
+.sns-box a:nth-of-type(2) .sns {
+  width: 24.7px;
+  height: 24.7px;
+}
+
+.sns-box .sns img {
+  width: 100%;
+  /* height: 100%; */
+}
+
+.sns-box a:nth-of-type(1) .sns img {
+  width: auto;
+  height: 100%;
+  margin-top: -1.5px;
+}
+.sns-box a:nth-of-type(2) .sns,
+.sns-box a:nth-of-type(3) .sns {
+  margin-right: 15px;
+}
+
 .footer .copy {
-  margin-top: 15px;
+  margin-top: 20px;
   font-size: 11px;
 }
