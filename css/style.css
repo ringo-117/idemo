@@ -590,6 +590,7 @@ body {
 .sns-box a:nth-of-type(2) .sns,
 .sns-box a:nth-of-type(3) .sns {
   margin-right: 15px;
+  align-items: center;
 }
 
 .footer .copy {
