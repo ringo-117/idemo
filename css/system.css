@@ -1,0 +1,638 @@
+@charset "UTF-8";
+/* system.css */
+
+@media screen and (min-width: 320px) {
+  /* スマホ用レイアウト 320px以上の範囲に収めるデザインはこの中に記述 */
+
+  .wrap-tb,
+  .wrap-pc,
+  .tb-img,
+  .tb-only,
+  .pc-only {
+    display: none;
+  }
+
+  /*==============================================================
+  　　SYSTEM
+  ==============================================================*/
+  .system {
+    margin: 80px 0 70px;
+  }
+  .sec-title {
+    font-weight: 600;
+    text-align: right;
+    margin: 18px 25px 0 0;
+  }
+
+  .sec-title .title {
+    font-size: 24px;
+    letter-spacing: 0.24em;
+    margin-right: -6px;
+    margin-bottom: 9px;
+  }
+
+  .sec-title .title-jp {
+    font-size: 10px;
+    letter-spacing: 0.17em;
+  }
+
+  .system-line {
+    height: 53px;
+  }
+
+  .system-img {
+    width: 100%;
+    height: 215px;
+    padding-right: 25px;
+    overflow: hidden;
+  }
+
+  .system-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 38%;
+  }
+
+  .system-text {
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2.8;
+    margin-top: 50px;
+    /* margin-bottom: 54px; */
+  }
+
+  /* ==================== 曲線 ================== */
+  /* .wrap {
+    overflow: hidden;
+    height: 50px;
+  }
+
+  .system-line {
+    border-top: solid 1px #212121;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    height: 365px;
+    margin-left: -100px;
+    margin-right: -100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    opacity: 0.7;
+  } */
+
+  .wrap-line-all {
+    width: 100vw;
+    overflow: hidden;
+
+  }
+  .wrap-line {
+    max-width: 110vw;
+    margin-left: -5vw;
+  }
+
+  /*==============================================================
+    　　flow
+  ==============================================================*/
+  .flow {
+    display: flex;
+    margin-bottom: 72px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 3.5px;
+  }
+
+  .flow-num {
+    font-family: "Noto Serif Kannada", serif;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    margin-bottom: 20px;
+  }
+
+  .flow-title {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+  }
+
+  .flow-03 .flow-title {
+    line-height: 1.6;
+  }
+
+  .flow-text {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    margin-top: 40px;
+  }
+
+  .flow-01 .item-end {
+    letter-spacing: 0.01em;
+  }
+
+  .flow-text.long {
+    line-height: 2.8em;
+    letter-spacing: -0.1em;
+  }
+
+  .flow-text a {
+    border-bottom: solid 1px #212121;
+  }
+
+  .flow-text a:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+
+  .item-end {
+    margin-bottom: 90px;
+  }
+
+  .flow-img {
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+  }
+
+  .flow-03 .flow-img {
+    margin-top: 27px;
+  }
+
+  .flow-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* ==================== 縦線と丸 ================== */
+  .flow-line-box {
+    margin-right: 20px;
+    display: flex;
+    position: relative;
+    margin-top: 5px;
+  }
+
+  .flow-circle-all img {
+    display: block;
+    width: 15px;
+    height: 15px;
+  }
+
+  .flow-circle-all img:nth-of-type(2) {
+    margin-top: 251px;
+  }
+
+  .flow-circle-all img:nth-of-type(3) {
+    margin-top: 570px;
+  }
+
+  .flow-line {
+    width: 1px;
+    height: 855px;
+    background-color: #D9D9D9;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    z-index: -1;
+  }
+
+  /*==============================================================
+    　　MENU
+  ==============================================================*/
+  .sec-menu {
+    background-image: url(../img/menu.png);
+    margin: 0 27px 30px;
+    height: 172px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .sec-menu .sec-title {
+    text-align: center;
+    margin: 0;
+    color: #fff;
+  }
+
+  .sec-menu .sec-title .title {
+    font-size: 26px;
+    letter-spacing: 0.09em;
+    text-shadow: #bebebe 0 0 2px;
+  }
+
+  .sec-menu .sec-title .title-jp {
+    font-size: 10px;
+    letter-spacing: 0.21em;
+    text-shadow: #bebebe 0 0 2px;
+  }
+
+  .sec-title .title-line {
+    width: 14px;
+    height: 1px;
+    background-color: #fff;
+    margin: 12px auto;
+    box-shadow: 0 0 2px 1px #D9D9D9;
+  }
+
+  .sec-bg {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    position: relative;
+  }
+
+  .arrow {
+    position: relative;
+    display: inline-block;
+    height: 19px;
+  }
+
+  .sec-bg .more-box {
+    position: absolute;
+    right: 13px;
+    bottom: 13px;
+  }
+
+}
+
+
+@media screen and (min-width: 640px) {
+  /* タブレット用レイアウト 640px以上の範囲に収めるデザインはこの中に記述 */
+
+  .wrap-sp,
+  .sp-img,
+  .tb-none {
+    display: none;
+  }
+
+  .wrap-tb,
+  .tb-img,
+  .tb-only {
+    display: block;
+  }
+  /*==============================================================
+    　　TB_SYSTEM
+  ==============================================================*/
+  .system {
+    margin: 180px 0 80px;
+  }
+
+  .sec-title {
+    margin: 35px 100px 0 0;
+  }
+
+  .sec-title .title {
+    font-size: 40px;
+    letter-spacing: 0.23em;
+    margin-bottom: 20px;
+  }
+
+  .sec-title .title-jp {
+    font-size: 15px;
+    letter-spacing: 0.16em;
+  }
+
+  .system-img {
+    height: 370px;
+    padding-right: 100px;
+  }
+
+
+  .system-text {
+    font-size: 15px;
+    line-height: 3;
+    margin-top: 70px;
+    letter-spacing: 0.03em;
+  }
+
+  .system-text span {
+    letter-spacing: 0.14em;
+  }
+
+  /*==============================================================
+    　　TB_flow
+  ==============================================================*/
+  .flow{
+    position: relative;
+    width: 770px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+
+  .flow-box {
+    width: 770px;
+  }
+
+  .flow-01,
+  .flow-03 {
+    margin-left: 390px;
+  }
+
+  .flow-02 {
+    max-width: 320px;
+    text-align: right;
+  }
+
+  .flow-num {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+
+  .flow-title {
+    font-size: 16px;
+  }
+
+  .flow-03 .flow-title {
+    line-height: 2.3;
+    margin-top: -6px;
+  }
+
+  .flow-text {
+    font-size: 16px;
+    letter-spacing: 0.09em;
+    margin-top: 34px;
+  }
+
+  .flow-01 .item-end {
+    margin-top: 35px;
+    letter-spacing: 0.01em;
+    margin-bottom: 70px;
+  }
+
+  .flow-text.long {
+    line-height: 2.5em;
+    letter-spacing: -0.1em;
+    text-align: left;
+    /* min-width: 330px; */
+    margin-top: 18px;
+  }
+
+  .flow-02 .flow-text.long {
+    margin-bottom: 60px;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: -10px;
+  }
+
+  .flow-img {
+    width: 295px;
+    height: 190px;
+    margin-top: 36px;
+  }
+
+  .flow-02 .flow-img {
+    margin-left: auto;
+  }
+
+  .flow-03 .flow-img {
+    margin-top: 30px;
+  }
+
+  /* ==================== 縦線と丸 ================== */
+  .flow-line-box {
+    position: absolute;
+    top: 0;
+    left: 360px;
+    margin-right: 0;
+  }
+
+  .flow-circle-all img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .flow-circle-all img:nth-of-type(2) {
+    margin-top: 228px;
+  }
+
+  .flow-circle-all img:nth-of-type(3) {
+    margin-top: 638px;
+  }
+
+  .flow-line {
+    height: 920px;
+    left: 14px;
+  }
+
+  /*==============================================================
+    　　TB_MENU
+  ==============================================================*/
+  .sec-menu {
+    margin: 0 27px 30px;
+    height: 226px;
+    max-width: 650px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 82px;
+  }
+
+  .sec-menu .sec-title {
+    margin-bottom: 8px;
+  }
+
+  .sec-menu .sec-title .title {
+    font-size: 36px;
+    letter-spacing: 0.17em;
+    text-shadow: #bebebe 0 0 5px;
+  }
+
+  .sec-menu .sec-title .title-jp {
+    font-size: 13px;
+    letter-spacing: 0.21em;
+    text-shadow: #bebebe 0 0 5px;
+  }
+
+  .sec-menu .sec-title .title-line {
+    width: 20px;
+    margin: 30px auto;
+  }
+
+  .arrow {
+    height: 36px;
+  }
+
+  .sec-bg .more-box {
+    right: 30px;
+    bottom: 22px;
+  }
+
+
+
+}
+
+
+@media screen and (min-width: 1024px) {
+  /* パソコン用レイアウト 1024px以上の範囲に収めるデザインはこの中に記述 */
+
+  .wrap-tb,
+  .tb-only {
+    display: none;
+  }
+
+  .wrap-pc,
+  .tb-none,
+  .pc-only {
+    display: block;
+  }
+
+  /*==============================================================
+    　　PC_SYSTEM
+  ==============================================================*/
+  .system {
+    margin: 180px 0 75px;
+  }
+
+  .sec-title {
+    margin: 32px 100px 0 0;
+  }
+
+  .sec-title .title {
+    font-size: 42px;
+    letter-spacing: 0.18em;
+    margin-bottom: 16px;
+  }
+
+  .sec-title .title-jp {
+    font-size: 15px;
+    letter-spacing: 0.16em;
+  }
+
+  .system-img {
+    height: 370px;
+    padding-right: 100px;
+  }
+
+  .system-text {
+    font-size: 15px;
+    line-height: 3;
+    margin-top: 70px;
+    letter-spacing: 0.03em;
+  }
+
+  .system-text span {
+    letter-spacing: 0.14em;
+  }
+
+  /* ==================== 曲線 ================== */
+  /* .wrap-line-all {
+    width: 100vw;
+    overflow: hidden;
+
+  }
+  .wrap-line {
+    max-width: 106vw;
+    margin-left: -3vw;
+  } */
+
+
+  /*==============================================================
+    　　PC_flow
+  ==============================================================*/
+  .flow{
+    width: 1000px;
+    margin-right: 0;
+    margin: 0 auto;
+    margin-top: 77px;
+    padding-left: 0;
+  }
+
+  .flow-box {
+    width: 1000px;
+  }
+
+  .flow-01,
+  .flow-03 {
+    margin-left: 600px;
+  }
+
+  .flow-02 {
+    /* max-width: 393px; */
+    max-width: 400px;
+  }
+
+  .flow-num {
+    margin-bottom: 30px;
+  }
+
+  .flow-title {
+    font-size: 20px;
+  }
+
+  .flow-03 .flow-title {
+    line-height: 2;
+    margin-top: -3px;
+  }
+
+  .flow-text {
+    font-size: 15px;
+  }
+
+  .flow-01 .item-end {
+    margin-top: 45px;
+    margin-bottom: 30px;
+  }
+
+  .flow-text.long {
+    min-width: 330px;
+    margin-top: 40px;
+  }
+
+  .flow-02 .flow-text.long {
+    margin-bottom: 0;
+    max-width: 400px;
+    margin-right: -18px;
+  }
+
+  .flow-img {
+    margin-top: 55px;
+  }
+
+  .flow-03 .flow-img {
+    margin-top: 50px;
+  }
+
+
+  /* ==================== 縦線と丸 ================== */
+  .flow-line-box {
+    left: 483px;
+  }
+
+  .flow-circle-all img:nth-of-type(2) {
+    margin-top: 217px;
+  }
+
+  .flow-circle-all img:nth-of-type(3) {
+    margin-top: 553px;
+  }
+
+  .flow-line {
+    height: 840px;
+  }
+
+  /*==============================================================
+    　　PC_MENU
+  ==============================================================*/
+  .sec-menu {
+    height: 220px;
+    max-width: 845px;
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  .sec-menu .sec-title {
+    margin-bottom: 5px;
+  }
+
+  .sec-menu .sec-title .title-line {
+    width: 25px;
+  }
+
+  .sec-bg .more-box {
+    right: 27px;
+    bottom: 21px;
+  }
+
+}
